@@ -18,13 +18,9 @@ with mss.mss() as sct:
 
         if(img[45][0][1] < 255 or img[20][0][1] < 255):
             keyboard.press('space')
-        # Display the picture
-        #cv2.imshow("OpenCV/Numpy normal", img)
 
         # Display the picture in grayscale
         # cv2.imshow('OpenCV/Numpy grayscale',cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY))
-
-        # print("fps: {}".format(1 / (time.time() - last_time)))
 
         # Press "q" to quit
         if cv2.waitKey(25) & 0xFF == ord("q"):
